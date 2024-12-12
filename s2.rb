@@ -29,3 +29,4 @@ class S2 < Formula
   test do
     system "#{bin}/s2", "--version"
   end
+end
