@@ -7,18 +7,18 @@ class S2 < Formula
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/s2-streamstore/streamstore-cli/releases/download/#{version}/s2-x86_64-apple-darwin.zip"
-      sha256 "79944ea10a9034a3349f54c69d294ce78e5cf1c3016a0d6c97ec438e40271967"
+      sha256 "affd2aa35872d1b6c34083a1587466437075707404afb6b1e8be067b055c717e"
     else
       url "https://github.com/s2-streamstore/streamstore-cli/releases/download/#{version}/s2-aarch64-apple-darwin.zip"
-      sha256 "0ee9eccf6b0c48e6c622881c886a8981e9ba87fb6201fabb32de7d73d626c545"
+      sha256 "bdc964d554f49aa7e3ab8496de0800a34978071e6048aecbf94d86399283645f"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/s2-streamstore/streamstore-cli/releases/download/#{version}/s2-x86_64-unknown-linux-gnu.zip"
-      sha256 "36e30336d533bfe86728a48ade2a6bf962efa969851fa5ffadd1c1d85068ec97"
+      sha256 "d3bf5f2eaa35f3a61bb6402213e5f4c436adcf1db57b0ed21f2c5e1712882d5a"
     else
       url "https://github.com/s2-streamstore/streamstore-cli/releases/download/#{version}/s2-aarch64-unknown-linux-gnu.zip"
-      sha256 "0c844386c56f0f9493cb809be3c81b2da6fbcc5b8bd75925aa7282ea0ae695e7"
+      sha256 "237bc43da6ef7045112d0442a7321ab85e4a786d495e40b5e285cf23e7fc0405"
     end
   end
 
