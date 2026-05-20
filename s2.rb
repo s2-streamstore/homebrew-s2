@@ -1,24 +1,24 @@
 class S2 < Formula
   desc "CLI for S2"
   homepage "https://s2.dev"
-  version "0.35.0"
+  version "0.35.1"
   license "Apache-2.0"
 
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/s2-streamstore/s2/releases/download/s2-cli-v#{version}/s2-x86_64-apple-darwin.zip"
-      sha256 "d92c16ce5a65efe9111149257415837354dbf695e30f81bd806394809de0a977"
+      sha256 "1e8ef95e29c751e5541c57e79ef7033b93e45cc0e76099940255726706f440ab"
     else
       url "https://github.com/s2-streamstore/s2/releases/download/s2-cli-v#{version}/s2-aarch64-apple-darwin.zip"
-      sha256 "44404ef0bf3839abe95275cb04bbfc424b6dc0fd624a519aac2fbc91d6208bc3"
+      sha256 "a3584c5e3055313f96c55b297d007f7c7df1f3bd845e5d180604d12ae1ea11e0"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/s2-streamstore/s2/releases/download/s2-cli-v#{version}/s2-x86_64-unknown-linux-gnu.zip"
-      sha256 "c82bc34ffc668400a599110c1abd0a7aec76756fff273047fa234f610d41fa80"
+      sha256 "8fcb23958b1b8eacdd682dd16134bb0142c16c3fc32ecec43b24c00bb834aae4"
     else
       url "https://github.com/s2-streamstore/s2/releases/download/s2-cli-v#{version}/s2-aarch64-unknown-linux-gnu.zip"
-      sha256 "ec2b67a5bb2bddfe3b69edbc072dc301a5afb1de4d8a8d25ab79143c12122935"
+      sha256 "d04c8e8f1a0cf64594b59d92ccf5ea3a46d6f8bd58820ff9edf8bd0aecf205d1"
     end
   end
 
